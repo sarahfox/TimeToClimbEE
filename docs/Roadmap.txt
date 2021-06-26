@@ -1,0 +1,16 @@
+Version 0.1 - Reimplement the existing functionality as a React-based site on Dropwizard.
+	3 fields, single 'Calculate' button.  Fix the bug so table and calculations are always on the same plane.
+	JSON file of airplane data
+	Calculations working on the front end.
+	Test set of calculations written, but no unit tests since the calculations will be moving to the back end fairly quickly.
+	No DB
+	
+Wishlist:
+	Add antD, CSS, Less, make it pretty.  Tabbed layout.
+	Add some error checking to the input fields.
+	Move calculations to backend.  Add unit tests.  Data still static, but use an api request to retrieve JSON.
+	Add frontend cache of plane data received from backend - no reason to hit the backend multiple times if the data's static.
+	Add DB storage of plane data. 
+	Add UI and api for add/edit/delete of plane data.
+	Add automatic lookup of plane data from FAA.
+	

@@ -1,0 +1,37 @@
+Original Time to Climb calculator has 3 fields and 2 buttons.  
+
+Fields:
+	Aircraft - drop down, labels formatted as {aircraft type} ({tail number})
+	Starting Altitude - text entry, accepts numeric inputs
+	Level Off Altitude - text entry, accepts numeric inputs
+
+Buttons:
+	Calculate - Runs the calculations for the selected aircraft
+	Show Performance Chart - Shows the performance chart for the selected aircraft
+
+Dispay areas:
+	Climb Results:
+		Calculations for "{aircraft type} ({tail number})":
+		KIAS: 62 (Average)
+		ROC: 773 (Average)
+		TIME: 4.0
+		FUEL: 0.6
+		DISTANCE: 4.0
+		
+	Climb Performance Chart Data from POH:
+		Data for "{aircraft type} ({tail number})":
+		
+		Below that is a table that has labels of: Pressure Altitude, Tempurature	Indicated Airspeed (Knots), Rate of Climb, Time, Fuel, Distance
+		
+		Data appears to be a straight regurgitation of what's in index.htm.
+		
+Things I noticed:
+	The calculate button runs the calculation and shows the performance chart, while the show chart button only shows the chart.  Therefore, it's possible to get into a state where the calculation area shows results for one plane, while the performance chart shows data for a different plane.  The new version should sync the two areas so they're both showing data for the same plane.
+	
+	Honestly, we probably just only need a calculate button.  In the onChange for the select tail number, clear any previous calculations and refresh the performance chart.
+	
+	Currently the performance chart data is in the index.htm file.  We shoud have a way to add data for different aircraft.  Is there someplace to look up this data automatically?  Or is it necessary to build a UI for users to input the data for their plane?
+	
+	I'd like to set up a tabbed layout - select aircraft and do the calculation in the main tab, performance data in a seconday tab.
+	
+	There doesn't appear to be any error checking on the altitude entry fields, other that making sure it's numeric.  Should probably just make sure that's an integer - what should the range limits be?  I assume a Cessna isn't going to space, so what's the max service ceiling?
