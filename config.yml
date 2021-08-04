@@ -1,0 +1,11 @@
+defaultTailNumber: N395EF
+
+logging:
+  level: INFO
+  loggers:
+    com.eldonfox: DEBUG
+
+server:
+  type: simple
+  rootPath: /api/
+  applicationContextPath: /
