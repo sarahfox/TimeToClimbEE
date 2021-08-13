@@ -24,7 +24,7 @@ public class TimeToClimbEEApplication extends Application<TimeToClimbEEConfigura
 
     @Override
     public void initialize(final Bootstrap<TimeToClimbEEConfiguration> bootstrap) {
-    	bootstrap.addBundle(new AssetsBundle("/assets/", "/"));
+    	bootstrap.addBundle(new AssetsBundle("/web/assets/", "/", "index.html"));
     }
 
     @Override
