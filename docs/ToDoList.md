@@ -3,12 +3,12 @@
 - [] Write up README
 
 Set up the basic frameworks I was using before
-- [] Dropwizard
-- [] Gradle build system
+- [x] Dropwizard
+- [x] -Gradle build system- Maven build system instead, since that's what Dropwizard ships with, and all the docs use that.
 - [] Postgres
 - [] Liquibase
-- [] React
-- [] AntD
+- [x] React
+- [x] AntD
 - [] Logging
 - [] Unit testing - java (JUnit) and js (Jasmine?)
 - [] Event tracking - something like KissMetrics, another system?

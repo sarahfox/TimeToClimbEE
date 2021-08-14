@@ -1,38 +1,18 @@
 .TimeToClimbEE {
-  text-align: center;
+  padding: 10px;
+  background-color: white;
 }
 
-.TimeToClimbEE-logo {
-  height: 40vmin;
-  pointer-events: none;
+.TimeToClimbEEHeader {
+  background-image: url('images/TimeToClimbLogo.png');
+  background-repeat: no-repeat;
+  background-color: white;
+  min-height: 66px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #aa3333;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .TimeToClimbEE-logo {
-    animation: TimeToClimbEE-logo-spin infinite 20s linear;
-  }
-}
-
-.TimeToClimbEE-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.TimeToClimbEE-link {
-  color: #61dafb;
-}
-
-@keyframes TimeToClimbEE-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.TimeToClimbEEHeader h1 {
+  	padding-left: 66px;
 }
